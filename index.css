@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(217, 221, 230);
+}
+body {
+    background-color: #1a1b1c;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    display: block;
+    margin: 0 auto;
+    width: 550px;
+    border-right: 10px solid #dde2f1;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.create_container {
+    width: 80%;
+}
+
+.create_input {
+    padding: 11px 4px;
+    font-size: 18px;
+    width: 70%;
+    border-radius: 7px;
+}
+
+.create_button {
+    padding: 12px 20px;
+    background-color: rgb(17, 149, 149);
+    border: 2px double rgb(137, 151, 151);
+    color: rgb(241, 233, 233);
+    font-size: 17px;
+    font-weight: bolder;
+    border-radius: 7px;
+    cursor: cell;
+}
+
+.create_button:active{
+    border: 3px double rgb(105, 41, 41);
+    box-shadow: 3px 4px 7px 5px rgb(57, 70, 70);
+}
+
+.todo_container {
+    padding: 30px 23px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.todo_item{
+    border: 4px double rgb(24, 1, 1);
+    border-radius: 8px;
+    width: 23%;
+    padding: 4px 10px;
+    background-color: rgb(61, 223, 201);
+    margin-bottom: 30px;
+}
+
+.todo_item.done{
+    background-color: rgb(230, 230, 213);
+    text-decoration: line-through;
+    color: gray;
+}
+
+.todo_item.done h4, .todo_item.done p, .todo_item.done  span{color: grey;}
+
+.todo_item.done img {opacity: 0.5;}
+
+.todo_item.marked{
+    background-color: yellow;
+    border: 4px double rgb(22, 22, 21);
+}
+
+.todo_item.header {
+    display: flex;
+    align-items: center;
+    min-height: 35px;
+}
+
+.todo_item_header h4{
+    font-size: 19px;
+    font-family: wide latin;
+}
+.todo_item_footer p {
+    font-size: 14px;
+    font-family: wide latin;
+}
+.todo_item_footer .action_buttons{
+    display: flex;
+}
+
+.todo_item_footer img{
+    width: 25px;
+    height: 25px;
+    margin: 0 5px; 
+    cursor: pointer;
+}
